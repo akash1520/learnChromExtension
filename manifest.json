@@ -1,9 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Hello Extensions of the world",
-  "description": "Base Level Extension",
+  "name": "Reading time",
+  "description": "Add the reading time to Chrome Extension documentation articles",
   "version": "1.0",
-  "action": {
-    "default_popup": "hello.html"
-  }
+  "icons": {
+    "16": "images/IMG_8018.JPG",
+    "32": "images/IMG_8028.JPG",
+    "48": "images/IMG_8031.JPG",
+    "128": "images/IMG_8032.JPG"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://developer.chrome.com/docs/devtools/*"
+      ]
+    }
+  ]
 }
