@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Focus mode",
+    "description": "Make the environment more readable",
+    "version": "1.0",
+    "icons": {
+        "16": "images/IMG_8018.JPG",
+        "32": "images/IMG_8028.JPG",
+        "48": "images/IMG_8031.JPG",
+        "128": "images/IMG_8032.JPG"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/IMG_8028.JPG",
+            "32": "images/IMG_8018.JPG",
+            "48": "images/IMG_8031.JPG",
+            "128": "images/IMG_8032.JPG"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+B",
+                "mac": "Command+B"
+            }
+        }
+    }
+}

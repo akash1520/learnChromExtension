@@ -1,0 +1,19 @@
+body>.scaffold> :is(top-nav, navigation-rail, side-nav, footer),
+main> :not(:last-child),
+main> :last-child>navigation-tree,
+main .toc-container {
+  display: none;
+}
+
+body {
+  background-color: black !important;
+  --color-text: white;
+  --color-secondary-text: #eee;
+  --color-code-bg: black;
+  --color-hairline: #eee;
+}
+
+main> :last-child {
+  margin-top: min(10vmax, 10rem);
+  margin-bottom: min(10vmax, 10rem);
+}
